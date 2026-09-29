@@ -1,0 +1,238 @@
+[
+  {
+    "question": "What is a fever?",
+    "answer": "Fever is a temporary increase in body temperature, often associated with an infection or illness."
+  },
+  {
+    "question": "What are common symptoms of the flu?",
+    "answer": "Common flu symptoms include fever, cough, sore throat, body aches, fatigue, chills, and headache."
+  },
+  {
+    "question": "What is a headache?",
+    "answer": "A headache is pain or discomfort in the head or upper neck. Persistent or severe headaches should be evaluated by a healthcare professional."
+  },
+  {
+    "question": "What is diabetes?",
+    "answer": "Diabetes is a condition in which blood glucose levels are too high because the body does not produce enough insulin or does not use insulin effectively."
+  },
+  {
+    "question": "What is high blood pressure?",
+    "answer": "High blood pressure, or hypertension, means blood pressure remains higher than the recommended range over time."
+  },
+  {
+    "question": "Can this chatbot diagnose medical conditions?",
+    "answer": "No. This chatbot provides general health information and should not replace diagnosis or professional medical advice."
+  },
+  {
+    "question": "What are symptoms of dehydration?",
+    "answer": "Common signs of dehydration include thirst, dry mouth, dark-colored urine, tiredness, dizziness, and reduced urination."
+  },
+  {
+    "question": "What causes dehydration?",
+    "answer": "Dehydration can occur when the body loses more fluid than it takes in, such as through sweating, vomiting, diarrhea, fever, or inadequate fluid intake."
+  },
+  {
+    "question": "How can dehydration be prevented?",
+    "answer": "Dehydration can often be prevented by drinking adequate fluids throughout the day and increasing fluid intake during hot weather, exercise, fever, vomiting, or diarrhea."
+  },
+  {
+    "question": "What is a cough?",
+    "answer": "A cough is a reflex that helps clear the airways of mucus, irritants, or foreign particles. A persistent or severe cough should be evaluated by a healthcare professional."
+  },
+  {
+    "question": "What are common causes of a cough?",
+    "answer": "Common causes of cough include viral respiratory infections, allergies, asthma, smoking, and irritation of the airways."
+  },
+  {
+    "question": "What is a sore throat?",
+    "answer": "A sore throat is pain, irritation, or scratchiness in the throat. It is commonly associated with respiratory infections but can have other causes."
+  },
+  {
+    "question": "What causes a sore throat?",
+    "answer": "A sore throat can be caused by viral infections, bacterial infections, allergies, dry air, or irritation from smoke and other substances."
+  },
+  {
+    "question": "What is the common cold?",
+    "answer": "The common cold is a viral infection of the upper respiratory tract. Symptoms can include a runny nose, sneezing, cough, sore throat, and mild fatigue."
+  },
+  {
+    "question": "What are symptoms of the common cold?",
+    "answer": "Common cold symptoms include runny or blocked nose, sneezing, sore throat, cough, mild headache, and tiredness."
+  },
+  {
+    "question": "What is asthma?",
+    "answer": "Asthma is a condition in which the airways become inflamed and narrowed, which can cause coughing, wheezing, chest tightness, and difficulty breathing."
+  },
+  {
+    "question": "What are common symptoms of asthma?",
+    "answer": "Common asthma symptoms include wheezing, coughing, shortness of breath, and chest tightness. Symptoms can vary between people."
+  },
+  {
+    "question": "What is an allergy?",
+    "answer": "An allergy occurs when the immune system reacts to a substance that is usually harmless, such as pollen, dust, certain foods, or animal dander."
+  },
+  {
+    "question": "What are common allergy symptoms?",
+    "answer": "Common allergy symptoms include sneezing, runny nose, itchy or watery eyes, skin irritation, and nasal congestion."
+  },
+  {
+    "question": "What is anemia?",
+    "answer": "Anemia is a condition in which the blood does not have enough healthy red blood cells or hemoglobin to carry adequate oxygen to the body's tissues."
+  },
+  {
+    "question": "What are common symptoms of anemia?",
+    "answer": "Common symptoms of anemia may include tiredness, weakness, dizziness, pale skin, headaches, and shortness of breath."
+  },
+  {
+    "question": "What is obesity?",
+    "answer": "Obesity is a condition involving excessive body fat that may increase the risk of several health problems. Health professionals can assess weight and overall health using multiple factors."
+  },
+  {
+    "question": "What is cholesterol?",
+    "answer": "Cholesterol is a waxy substance that the body needs for certain functions. Too much cholesterol in the blood can contribute to plaque buildup in arteries."
+  },
+  {
+    "question": "Why is high cholesterol a concern?",
+    "answer": "High levels of certain types of cholesterol can contribute to plaque buildup in arteries and may increase the risk of cardiovascular disease."
+  },
+  {
+    "question": "What is heart disease?",
+    "answer": "Heart disease refers to several conditions affecting the heart and blood vessels. Coronary artery disease is one common type."
+  },
+  {
+    "question": "What are warning signs of a heart attack?",
+    "answer": "Warning signs can include chest pressure or discomfort, pain that may spread to the arm, shoulder, back, neck, or jaw, shortness of breath, sweating, nausea, or unusual weakness. Seek emergency medical care immediately if these symptoms occur."
+  },
+  {
+    "question": "What is a stroke?",
+    "answer": "A stroke occurs when blood flow to part of the brain is interrupted or when a blood vessel in the brain bleeds. It requires immediate emergency medical attention."
+  },
+  {
+    "question": "What are warning signs of a stroke?",
+    "answer": "Possible stroke warning signs include sudden weakness or numbness, especially on one side, sudden trouble speaking or understanding, sudden vision problems, dizziness, loss of balance, or a sudden severe headache. Seek emergency medical care immediately."
+  },
+  {
+    "question": "What is an infection?",
+    "answer": "An infection occurs when harmful microorganisms such as bacteria, viruses, fungi, or parasites enter the body and multiply or cause an immune response."
+  },
+  {
+    "question": "What is inflammation?",
+    "answer": "Inflammation is a natural response of the immune system to injury, infection, or irritation. It can cause redness, swelling, warmth, pain, or changes in function."
+  },
+  {
+    "question": "What is nausea?",
+    "answer": "Nausea is a feeling of discomfort or an urge to vomit. It can have many causes, including infections, motion sickness, medications, and digestive problems."
+  },
+  {
+    "question": "What is vomiting?",
+    "answer": "Vomiting is the forceful emptying of stomach contents through the mouth. Repeated vomiting can lead to dehydration and may require medical evaluation."
+  },
+  {
+    "question": "What causes stomach pain?",
+    "answer": "Stomach or abdominal pain can have many causes, including indigestion, gas, infections, constipation, and other medical conditions. Severe or persistent abdominal pain should be evaluated by a healthcare professional."
+  },
+  {
+    "question": "What is constipation?",
+    "answer": "Constipation means having bowel movements that are difficult to pass or occur less frequently than usual. Increasing dietary fiber, drinking adequate fluids, and staying physically active can help some people."
+  },
+  {
+    "question": "What is diarrhea?",
+    "answer": "Diarrhea involves frequent loose or watery stools. It can be caused by infections, food-related problems, medications, or other conditions."
+  },
+  {
+    "question": "What is acid reflux?",
+    "answer": "Acid reflux occurs when stomach contents flow back into the esophagus. It can cause heartburn, a sour taste, or discomfort in the chest or upper abdomen."
+  },
+  {
+    "question": "What is a migraine?",
+    "answer": "Migraine is a neurological condition that can cause recurring headaches, often with symptoms such as nausea and sensitivity to light or sound."
+  },
+  {
+    "question": "What is insomnia?",
+    "answer": "Insomnia is difficulty falling asleep, staying asleep, or getting adequate restful sleep. Persistent sleep problems should be discussed with a healthcare professional."
+  },
+  {
+    "question": "How much sleep do adults generally need?",
+    "answer": "Most adults generally need around 7 to 9 hours of sleep per night, although individual needs can vary."
+  },
+  {
+    "question": "Why is regular exercise important?",
+    "answer": "Regular physical activity can support cardiovascular health, muscle and bone strength, mental well-being, and overall health."
+  },
+  {
+    "question": "Why is a balanced diet important?",
+    "answer": "A balanced diet provides nutrients and energy needed for normal body functions, growth, repair, and overall health."
+  },
+  {
+    "question": "Why is drinking water important?",
+    "answer": "Water is essential for many body functions, including temperature regulation, digestion, circulation, and maintaining normal cellular function."
+  },
+  {
+    "question": "How can I maintain good hygiene?",
+    "answer": "Good hygiene includes regularly washing hands, bathing, maintaining oral hygiene, keeping food preparation areas clean, and practicing appropriate respiratory hygiene."
+  },
+  {
+    "question": "How can infections be prevented?",
+    "answer": "Infection prevention can include regular handwashing, appropriate vaccination, safe food handling, covering coughs and sneezes, and avoiding close contact with people who are sick when appropriate."
+  },
+  {
+    "question": "What is first aid?",
+    "answer": "First aid is the immediate care provided to someone who is injured or suddenly ill before professional medical help is available."
+  },
+  {
+    "question": "What should I do for a minor burn?",
+    "answer": "For a minor burn, cool the affected area under cool running water for about 20 minutes. Avoid applying ice directly to the burn. Seek medical care for serious or extensive burns."
+  },
+  {
+    "question": "When should someone seek emergency medical help?",
+    "answer": "Emergency medical help may be needed for symptoms such as severe difficulty breathing, severe chest pain, signs of stroke, severe bleeding, loss of consciousness, seizures, or other life-threatening symptoms."
+  },
+  {
+    "question": "What is mental health?",
+    "answer": "Mental health includes emotional, psychological, and social well-being. It affects how people think, feel, cope with stress, and interact with others."
+  },
+  {
+    "question": "What is stress?",
+    "answer": "Stress is the body's response to challenging or demanding situations. Persistent or overwhelming stress may affect physical and emotional well-being."
+  },
+  {
+    "question": "What are common signs of stress?",
+    "answer": "Signs of stress can include difficulty sleeping, irritability, headaches, muscle tension, tiredness, difficulty concentrating, and changes in appetite."
+  },
+  {
+    "question": "What is depression?",
+    "answer": "Depression is a mental health condition that can involve persistent sadness or loss of interest or pleasure along with changes in sleep, appetite, energy, concentration, or other symptoms."
+  },
+  {
+    "question": "What is anxiety?",
+    "answer": "Anxiety involves feelings of worry, fear, or nervousness. Occasional anxiety is common, but persistent or severe anxiety may require professional evaluation."
+  },
+  {
+    "question": "What is skin health?",
+    "answer": "Skin health can be supported by gentle cleansing, adequate hydration, sun protection, and avoiding unnecessary irritation. Persistent or changing skin problems should be evaluated by a healthcare professional."
+  },
+  {
+    "question": "Why is dental hygiene important?",
+    "answer": "Good dental hygiene helps prevent tooth decay, gum disease, bad breath, and other oral health problems. Regular brushing, flossing, and dental checkups are important."
+  },
+  {
+    "question": "How often should I brush my teeth?",
+    "answer": "Most dental professionals recommend brushing teeth twice a day with fluoride toothpaste and cleaning between teeth regularly."
+  },
+  {
+    "question": "What is a balanced lifestyle?",
+    "answer": "A balanced lifestyle generally includes nutritious food, regular physical activity, adequate sleep, stress management, good hygiene, and appropriate healthcare."
+  },
+  {
+    "question": "Can the chatbot prescribe medicines?",
+    "answer": "No. MedAI does not prescribe medicines or provide personalized medication doses. Medication decisions should be made with a qualified healthcare professional."
+  },
+  {
+    "question": "Can MedAI replace a doctor?",
+    "answer": "No. MedAI provides general educational health information and cannot replace examination, diagnosis, treatment, or advice from a qualified healthcare professional."
+  },
+  {
+    "question": "What should I do if my symptoms are getting worse?",
+    "answer": "If symptoms are worsening, persistent, severe, or concerning, contact a qualified healthcare professional. For life-threatening symptoms, seek emergency medical care immediately."
+  }
+]

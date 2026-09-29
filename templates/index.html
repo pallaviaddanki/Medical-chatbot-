@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="MedAI - Medical AI Assistant"
+    >
+
+    <title>MedAI — Medical AI Assistant</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- BRAND -->
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                +
+            </div>
+
+            <div class="brand-text">
+
+                <h2>
+                    Med<span>AI</span>
+                </h2>
+
+                <p>
+                    Medical Intelligence
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- NEW CHAT -->
+
+        <button
+            class="new-chat"
+            onclick="clearChat()"
+        >
+
+            <span class="plus-icon">
+                +
+            </span>
+
+            New conversation
+
+        </button>
+
+
+        <!-- =================================================
+             ASSISTANT NAVIGATION
+        ================================================== -->
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-label">
+                ASSISTANT
+            </div>
+
+
+            <!-- MEDICAL ASSISTANT -->
+
+            <button
+                class="nav-item active"
+                onclick="showSection('assistant', this)"
+            >
+
+                <span class="nav-icon">
+                    💬
+                </span>
+
+                <span>
+                    Medical Assistant
+                </span>
+
+            </button>
+
+
+            <!-- AI KNOWLEDGE -->
+
+            <button
+                class="nav-item"
+                onclick="showSection('knowledge', this)"
+            >
+
+                <span class="nav-icon">
+                    🧠
+                </span>
+
+                <span>
+                    AI Knowledge
+                </span>
+
+            </button>
+
+
+            <!-- HEALTH TOPICS -->
+
+            <button
+                class="nav-item"
+                onclick="showSection('topics', this)"
+            >
+
+                <span class="nav-icon">
+                    📚
+                </span>
+
+                <span>
+                    Health Topics
+                </span>
+
+            </button>
+
+        </nav>
+
+
+        <!-- =================================================
+             FEATURES
+        ================================================== -->
+
+        <div class="sidebar-info">
+
+            <div class="nav-label">
+                FEATURES
+            </div>
+
+
+            <div class="feature-row">
+
+                <div class="feature-icon blue">
+                    🤖
+                </div>
+
+                <div>
+
+                    <strong>
+                        AI Powered
+                    </strong>
+
+                    <p>
+                        Intelligent responses
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature-row">
+
+                <div class="feature-icon green">
+                    🔍
+                </div>
+
+                <div>
+
+                    <strong>
+                        Knowledge Based
+                    </strong>
+
+                    <p>
+                        Medical information
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature-row">
+
+                <div class="feature-icon purple">
+                    🛡️
+                </div>
+
+                <div>
+
+                    <strong>
+                        Safety Focused
+                    </strong>
+
+                    <p>
+                        Emergency screening
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SIDEBAR FOOTER
+        ================================================== -->
+
+        <div class="sidebar-footer">
+
+            <div class="version">
+                MedAI v1.0
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <div class="mobile-logo">
+                    +
+                </div>
+
+                <div>
+
+                    <h1 id="pageTitle">
+                        Medical AI Assistant
+                    </h1>
+
+                    <div class="connection-status">
+
+                        <span class="status-dot"></span>
+
+                        AI assistant online
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="secure-status">
+                    🔒 Secure session
+                </div>
+
+                <button
+                    class="clear-button"
+                    onclick="clearChat()"
+                    title="Clear conversation"
+                >
+                    🗑️
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             CHAT / CONTENT AREA
+        ================================================== -->
+
+        <section
+            id="chatBox"
+            class="chat-box"
+        >
+
+
+            <!-- =============================================
+                 MEDICAL ASSISTANT
+            ============================================== -->
+
+            <div id="assistantSection">
+
+
+                <div class="hero">
+
+                    <div class="hero-badge">
+
+                        <span class="pulse"></span>
+
+                        AI HEALTH ASSISTANT
+
+                    </div>
+
+
+                    <div class="hero-icon">
+
+                        <div class="hero-icon-inner">
+                            🩺
+                        </div>
+
+                    </div>
+
+
+                    <h2>
+
+                        Your health questions,
+                        <span>simplified.</span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Get clear, educational information
+                        about common health topics,
+                        symptoms, prevention and wellness.
+
+                    </p>
+
+
+                    <div class="hero-features">
+
+                        <div>
+                            <span>✓</span>
+                            Educational
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Knowledge based
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Safety focused
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INITIAL AI MESSAGE -->
+
+                <div class="message bot">
+
+                    <div class="message-avatar">
+                        🤖
+                    </div>
+
+
+                    <div class="message-content">
+
+                        <div class="message-header">
+
+                            <strong>
+                                MedAI
+                            </strong>
+
+                            <span>
+                                AI Assistant
+                            </span>
+
+                        </div>
+
+
+                        <div class="bubble">
+
+                            <p>
+                                Hello! 👋
+                            </p>
+
+                            <p>
+                                I'm MedAI, your medical
+                                information assistant.
+                            </p>
+
+                            <p>
+                                Ask me a question about
+                                a common health topic.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 AI KNOWLEDGE SECTION
+            ============================================== -->
+
+            <div
+                id="knowledgeSection"
+                class="content-section"
+                style="display: none;"
+            >
+
+                <div class="section-card">
+
+                    <div class="section-icon">
+                        🧠
+                    </div>
+
+                    <h2>
+                        AI Knowledge
+                    </h2>
+
+                    <p>
+                        MedAI uses a medical knowledge
+                        base with semantic search to
+                        retrieve relevant information
+                        before generating a response.
+                    </p>
+
+
+                    <div class="knowledge-list">
+
+                        <div class="knowledge-item">
+                            <span>🔍</span>
+                            Semantic document retrieval
+                        </div>
+
+                        <div class="knowledge-item">
+                            <span>📚</span>
+                            Medical FAQ knowledge base
+                        </div>
+
+                        <div class="knowledge-item">
+                            <span>🤖</span>
+                            AI-generated educational responses
+                        </div>
+
+                        <div class="knowledge-item">
+                            <span>🛡️</span>
+                            Emergency keyword screening
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 HEALTH TOPICS SECTION
+            ============================================== -->
+
+            <div
+                id="topicsSection"
+                class="content-section"
+                style="display: none;"
+            >
+
+                <div class="section-card">
+
+                    <div class="section-icon">
+                        📚
+                    </div>
+
+                    <h2>
+                        Health Topics
+                    </h2>
+
+                    <p>
+                        Explore common health topics
+                        available in the MedAI knowledge base.
+                    </p>
+
+
+                    <div class="topic-grid">
+
+                        <button
+                            onclick="askExample('What is a fever?')"
+                        >
+                            🌡️ Fever
+                        </button>
+
+                        <button
+                            onclick="askExample('What are common symptoms of the flu?')"
+                        >
+                            🤒 Flu
+                        </button>
+
+                        <button
+                            onclick="askExample('What is dehydration?')"
+                        >
+                            💧 Dehydration
+                        </button>
+
+                        <button
+                            onclick="askExample('What is diabetes?')"
+                        >
+                            🩸 Diabetes
+                        </button>
+
+                        <button
+                            onclick="askExample('What is high blood pressure?')"
+                        >
+                            ❤️ Blood Pressure
+                        </button>
+
+                        <button
+                            onclick="askExample('What is asthma?')"
+                        >
+                            🫁 Asthma
+                        </button>
+
+                        <button
+                            onclick="askExample('What is anemia?')"
+                        >
+                            🩸 Anemia
+                        </button>
+
+                        <button
+                            onclick="askExample('What is a headache?')"
+                        >
+                            🤕 Headache
+                        </button>
+
+                        <button
+                            onclick="askExample('What is acid reflux?')"
+                        >
+                            🍽️ Acid Reflux
+                        </button>
+
+                        <button
+                            onclick="askExample('Why is regular exercise important?')"
+                        >
+                            🏃 Exercise
+                        </button>
+
+                        <button
+                            onclick="askExample('Why is a balanced diet important?')"
+                        >
+                            🥗 Nutrition
+                        </button>
+
+                        <button
+                            onclick="askExample('How much sleep do adults generally need?')"
+                        >
+                            😴 Sleep
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             QUICK QUESTIONS
+        ================================================== -->
+
+        <section
+            class="quick-section"
+            id="quickSection"
+        >
+
+            <div class="quick-title">
+
+                <span>
+                    ✨
+                </span>
+
+                <span>
+                    Common questions
+                </span>
+
+            </div>
+
+
+            <div class="quick-grid">
+
+
+                <button
+                    class="quick-card"
+                    onclick="askExample('What are symptoms of dehydration?')"
+                >
+
+                    <div class="quick-card-icon water">
+                        💧
+                    </div>
+
+                    <div class="quick-card-content">
+
+                        <strong>
+                            Dehydration
+                        </strong>
+
+                        <span>
+                            Causes and symptoms
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    onclick="askExample('What are common symptoms of the flu?')"
+                >
+
+                    <div class="quick-card-icon flu">
+                        🤒
+                    </div>
+
+                    <div class="quick-card-content">
+
+                        <strong>
+                            Flu symptoms
+                        </strong>
+
+                        <span>
+                            Common signs
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    onclick="askExample('What is high blood pressure?')"
+                >
+
+                    <div class="quick-card-icon heart">
+                        ❤️
+                    </div>
+
+                    <div class="quick-card-content">
+
+                        <strong>
+                            Blood pressure
+                        </strong>
+
+                        <span>
+                            Understanding BP
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    onclick="askExample('How can I stay healthy?')"
+                >
+
+                    <div class="quick-card-icon health">
+                        🌿
+                    </div>
+
+                    <div class="quick-card-content">
+
+                        <strong>
+                            Healthy habits
+                        </strong>
+
+                        <span>
+                            Everyday wellness
+                        </span>
+
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             INPUT
+        ================================================== -->
+
+        <section class="composer-section">
+
+            <div class="composer">
+
+                <div class="composer-left">
+
+                    <span class="composer-icon">
+                        ✨
+                    </span>
+
+                    <input
+                        id="messageInput"
+                        type="text"
+                        maxlength="1000"
+                        autocomplete="off"
+                        placeholder="Ask MedAI a medical question..."
+                        onkeydown="handleKey(event)"
+                    >
+
+                </div>
+
+
+                <button
+                    id="sendButton"
+                    class="send-button"
+                    onclick="sendMessage()"
+                    title="Send message"
+                >
+
+                    <span>
+                        ↑
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <div class="composer-footer">
+
+                <span>
+                    Press <strong>Enter</strong> to send
+                </span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- ========================================================
+     NAVIGATION JAVASCRIPT
+========================================================= -->
+
+<script>
+
+function showSection(section, clickedButton) {
+
+    const assistant =
+        document.getElementById("assistantSection");
+
+    const knowledge =
+        document.getElementById("knowledgeSection");
+
+    const topics =
+        document.getElementById("topicsSection");
+
+    const quick =
+        document.getElementById("quickSection");
+
+    const pageTitle =
+        document.getElementById("pageTitle");
+
+
+    // Hide everything
+
+    assistant.style.display = "none";
+    knowledge.style.display = "none";
+    topics.style.display = "none";
+
+    quick.style.display = "none";
+
+
+    // Remove active state
+
+    document
+        .querySelectorAll(".nav-item")
+        .forEach(function(item) {
+
+            item.classList.remove("active");
+
+        });
+
+
+    // Show selected section
+
+    if (section === "assistant") {
+
+        assistant.style.display = "block";
+
+        quick.style.display = "block";
+
+        pageTitle.textContent =
+            "Medical AI Assistant";
+
+    }
+
+
+    if (section === "knowledge") {
+
+        knowledge.style.display = "block";
+
+        pageTitle.textContent =
+            "AI Knowledge";
+
+    }
+
+
+    if (section === "topics") {
+
+        topics.style.display = "block";
+
+        pageTitle.textContent =
+            "Health Topics";
+
+    }
+
+
+    // Active button
+
+    clickedButton.classList.add("active");
+
+}
+
+</script>
+
+
+<!-- Main application JavaScript -->
+
+<script
+    src="{{ url_for('static', filename='script.js') }}"
+></script>
+
+
+</body>
+
+</html>
